@@ -120,7 +120,8 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 //        System.out.println("printJobs is not implemented yet");
 
-        // Check if any jobs are in somejobs
+
+
         if (someJobs.size() > 0) {
             //Using a loop to iterate over Array of HashMap Objects (Jobs)
             for (HashMap<String, String> aJob : someJobs) {
