@@ -124,11 +124,14 @@ public class TechJobs {
 
         if (someJobs.size() > 0) {
             //Using a loop to iterate over Array of HashMap Objects (Jobs)
-            for (HashMap<String, String> aJob : someJobs) {
-                System.out.println("\n*****");
+            System.out.print("no results");
+        } else
+            {
+             for (HashMap<String, String> aJob : someJobs){  
+            System.out.println("\n*****");
                 // Then nest a for-each loop to iterate over the Hashmap Objects
-                for(Map.Entry<String, String> data: aJob.entrySet()) {
-                    System.out.println(data.getKey() + ": " + data.getValue());
+                for(Map.Entry<String, String> field: aJob.entrySet()) {
+                    System.out.println(field.getKey() + ": " + field.getValue());
                 }
                 System.out.println("*****");
             }
@@ -138,6 +141,7 @@ public class TechJobs {
             // Use print instead of println so that a new line is not printed after No Results to match the test output
             System.out.print("No Results");
         }
+        system.out.println("printjobs is not implemented");
     }
 }
 
