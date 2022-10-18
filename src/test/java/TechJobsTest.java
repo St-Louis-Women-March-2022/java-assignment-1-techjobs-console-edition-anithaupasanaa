@@ -28,6 +28,7 @@ public class TechJobsTest {
     private static String runProgramWithInput(String input) {
         Scanner in = new Scanner(input);
         TechJobs.in = in;
+
         TechJobs.main(null);
         return baos.toString();
     }
@@ -35,6 +36,7 @@ public class TechJobsTest {
     private static String getFileContents(String fileName) throws IOException {
         Path path = FileSystems.getDefault().getPath(fileName);
         return Files.readString(path);
+
     }
 
     @Test
@@ -71,3 +73,4 @@ public class TechJobsTest {
 
 
 }
+
